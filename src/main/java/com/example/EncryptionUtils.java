@@ -10,7 +10,7 @@ public class EncryptionUtils {
 
     // Method to encrypt data using AES encryption
     public static String encrypt(String data, String key) throws Exception {
-        // AES this key length
+        // AES requires this key length
         if (key.length() != 16) {
             throw new IllegalArgumentException("Key must be 16 bytes long");
         }
